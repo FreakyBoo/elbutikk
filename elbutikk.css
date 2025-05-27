@@ -1,19 +1,19 @@
 body {
-    text-align: center;
+    text-align: center; /*Sentrerer all tekst i body*/
     font-family: Arial, sans-serif;
     background-image: url('https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg');
-    background-repeat: no-repeat;
-    background-position-x: center;
+    background-repeat: no-repeat; /*Forhindrer gjentakelse av bakgrunnsbilde*/
+    background-position-x: center; /*Sentrerer bakgrunnsbildet horisontalt*/
 }   
 button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    background-color: #313232;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px; /*Legger til padding for å gjøre knappen større*/
+    margin: 10px; /*Legger til margin for å skille knappene fra hverandre*/
+    font-size: 16px; /*Endrer skriftstørrelsen på knappene*/
+    background-color: #303131; 
+    color: #ffffff;
+    border: none; /*Fjerner standard kantlinje*/
+    border-radius: 5px; /*Legger til avrundede hjørner*/
+    cursor: pointer; /*Endrer musepekern til finger*/
 }
 
 button:hover {
