@@ -49,7 +49,7 @@ if (isset($_POST["complete_order"])) {
     }
     // Tøm handlekurven
     unset($_SESSION["handlekurv"]);
-      echo "<p>Bestillingen er sendt inn! <a href='velkommen.php'>Gå tilbake</a></p>";
+      echo "<p>Bestillingen er fullført! <br><br> <a href='velkommen.php'>Gå tilbake</a></p>";
     $conn->close();
 }
 ?>
@@ -61,6 +61,7 @@ if (isset($_POST["complete_order"])) {
     <meta charset="UTF-8">
     <title>Bestill produkter - EL butikk</title>
     <link rel="stylesheet" href="nettside.css">
+    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="100" height="100">
 </head>
 <body>
     <h1>Bestill produkter</h1>
@@ -91,10 +92,10 @@ if (isset($_POST["complete_order"])) {
         <?php
         if (!empty($_SESSION["handlekurv"])) {
             $conn = new mysqli("localhost", "julian", "Julian2007!", "elbutikk");
-              foreach ($_SESSION["handlekurv"] as $id) {
-                    $sql = "SELECT navn FROM produkter WHERE produkt_id = '$id'";
-                    $res = $conn->query($sql);
-                    $navn = $res->fetch_assoc()["navn"];
+              foreach ($_SESSION["handlekurv"] as $produkt_id) {
+                    $sql = "SELECT navn FROM produkter WHERE produkt_id = '$produkt_id'";
+                    $result = $conn->query($sql);
+                    $navn = $result->fetch_assoc()["navn"];
                     echo "<li>$navn</li>";
                     }
                 $conn->close();

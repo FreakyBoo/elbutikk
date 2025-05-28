@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="post">
         <label for="epost">E-post:</label>
         <input type="email" id="epost" name="epost" tabindex="1" required><br>
-
+        <br>
         <label for="passord">Passord:</label>
         <input type="password" id="passord" name="passord" tabindex="2" required><br>
         <br>
