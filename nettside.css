@@ -8,7 +8,7 @@ body {
 button {
     padding: 10px 20px; /*Legger til padding for å gjøre knappen større*/
     font-size: 16px; /*Endrer skriftstørrelsen på knappene*/
-    background-color: #303131; 
+    background-color: rgb(48, 49, 49); 
     color: #ffffff; /*Endrer fargen på teksten i knappene*/
     border: none; /*Fjerner standard kantlinje*/
     border-radius: 5px; /*Legger til avrundede hjørner*/
@@ -17,37 +17,25 @@ button {
     font-weight: bold; /*Gjør all tekst i body fet*/
 }
 button:hover {
-    background-color: #717575; /*Endrer bakgrunnsfarge når musen er over knappen*/
+    background-color: rgb(113, 117, 117); /*Endrer bakgrunnsfarge når musen er over knappen*/
+    padding: 12px 22px; /*Legger til padding når musen er over knappen*/
 }
 
 a{
-    color: #111111; /*Endrer fargen på lenker*/
+    color: #fcfcfc; /*Endrer fargen på lenker*/
+    background-color: rgb(48, 49, 49); /*Endrer bakgrunnsfarge på lenker*/
     text-decoration: none; /*Fjerner understrek på lenker*/
     font-weight: bold; /*Gjør all tekst i body fet*/
     font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
-    font-size: 20px; /*Endrer skriftstørrelsen på lenker*/ 
+    font-size: 16px; /*Endrer skriftstørrelsen på lenker*/
+    border-radius: 5px; /*Legger til avrundede hjørner på lenker*/
+    padding: 6px;  /*Legger til padding på lenker*/ 
 }
 a:hover {
     color: #fcfcfc; /*Endrer fargen på lenker når musen er over dem*/
-    background-color: rgb(6, 6, 6); /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
+    background-color: rgb(113, 117, 117); /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
     border-radius: 5px; /*Legger til avrundede hjørner på lenker når musen er over dem*/
-    padding: 2px; /*Legger til padding på lenker når musen er over dem*/
+    padding: 8px; /*Legger til padding på lenker når musen er over dem*/
 }
 
-.velkommen, a {
-    color: #f4f4f4; /*Endrer fargen på lenker*/
-    background-color: black; /*Endrer bakgrunnsfarge på lenker*/
-    border-radius: 5px; /*Legger til avrundede hjørner på lenker*/
-    padding: 5px;  /*Legger til padding på lenker*/
-}
 
-.velkommen, a:hover {
-    color: #f4f4f4; /*Endrer fargen på lenker når musen er over dem*/
-    background-color: black; /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
-    padding: 7px;
-}
-
-.velkommen, img {
-    width: 400px; /*Setter bredden på bildet til 100px*/
-    height: 400px; /*Setter høyden på bildet til 100px*/
-}

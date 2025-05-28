@@ -32,6 +32,6 @@ $kunde_id = $_SESSION['kunde_id'];
     <p><a href="index.php" tabindex ="2">Logg ut</a></p>
     </div>
     <br>
-    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
+    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="400" height="400">
 </body>
 </html>
