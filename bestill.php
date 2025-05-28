@@ -54,58 +54,59 @@ if (isset($_POST["complete_order"])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Bestill produkter - EL butikk</title>
-    <link rel="stylesheet" href="nettside.css">
-    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="100" height="100">
+    <title>Bestill produkter</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Bestill produkter</h1>
+    <h1>Bestill elektroniske produkter</h1>
 
     <form method="post">
-        <div class = "produkter">
+        <div class="produkt-grid">
         <?php
-        // Koble til databasen
         $conn = new mysqli("localhost", "julian", "Julian2007!", "elbutikk");
         $sql = "SELECT * FROM produkter";
         $result = $conn->query($sql);
 
-        while ($row = $result->fetch_assoc()) {
+        while ($produkt = $result->fetch_assoc()):
         ?>
             <div class="produkt">
-                <h2><?php echo $row['navn']; ?></h2>
-                <p>Pris: <?php echo $row['pris']; ?> kr</p>
-                <img src="<?php echo $row['bilde']; ?>" alt="<?php echo $row['navn']; ?>" width="200" height="200">
-                <button type="submit" name="legg_til" value="<?php echo $row['produkt_id']; ?>">Legg til i handlekurv</button>
+                <img src="<?= $produkt['bilde'] ?>" alt="<?= $produkt['navn'] ?>" style="max-width:100px;"><br>
+                <strong><?= $produkt['navn'] ?></strong><br>
+                <?= $produkt['pris'] ?> kr<br>
+                <button type="submit" name="legg_til" value="<?= $produkt['produkt_id'] ?>">Legg i handlekurv</button>
             </div>
-        <?php }
-        $conn->close();
-        ?>
-        
+        <?php endwhile;
+        $conn->close(); ?>
         </div>
-        <h2>Handlekurv</h2>
+
+        <h3>Handlekurv:</h3>
         <ul>
-        <?php
-        if (!empty($_SESSION["handlekurv"])) {
-            $conn = new mysqli("localhost", "julian", "Julian2007!", "elbutikk");
-              foreach ($_SESSION["handlekurv"] as $produkt_id) {
-                    $sql = "SELECT navn FROM produkter WHERE produkt_id = '$produkt_id'";
-                    $result = $conn->query($sql);
-                    $navn = $result->fetch_assoc()["navn"];
+            <?php
+            if (!empty($_SESSION["handlekurv"])) {
+                $conn = new mysqli("localhost", "julian", "Julian2007!", "elbutikk");
+                foreach ($_SESSION["handlekurv"] as $id) {
+                    $sql = "SELECT navn FROM produkter WHERE produkt_id = '$id'";
+                    $res = $conn->query($sql);
+                    $navn = $res->fetch_assoc()["navn"];
                     echo "<li>$navn</li>";
-                    }
+                }
                 $conn->close();
             } else {
                 echo "<li>Handlekurven er tom</li>";
             }
             ?>
         </ul>
+
+        <!-- Fullfør bestilling knapp -->
         <button type="submit" name="complete_order">Fullfør bestilling</button>
     </form>
 </body>
+<footer>
+    <p>&copy; 2025 EL butikk. All rights reserved</p>
+</footer>
 </html>
-    
+
