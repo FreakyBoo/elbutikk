@@ -46,10 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="passord">Passord:</label>
         <input type="password" id="passord" name="passord" tabindex="2" required><br>
-
-        <input type="submit" value="Logg inn" tabindex="3">
+        <br>
+        <button type="submit" value="Logg inn" tabindex="3">Logg inn</button>
     </form>
+    <p>Har du ikke en konto? <br>
     <br>
-    <p>Har du ikke en konto? <a href="registrer.php">Registrer deg her</a></p>
+    <a href="registrer.php" tabindex = "4">Registrer deg her</a></p>
+    <br>
+    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
 </body>
 </html>

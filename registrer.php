@@ -1,4 +1,3 @@
-Registrer.php
 <?php
 session_start();
 
@@ -48,30 +47,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="post">
         <label for="fornavn">Fornavn:</label>
         <input type="text" id="fornavn" name="fornavn" tabindex ="1" required><br>
-
+        <br>
         <label for="etternavn">Etternavn:</label>
         <input type="text" id="etternavn" name="etternavn" tabindex ="2" required><br>
-
+        <br>
         <label for="epost">E-post:</label>
         <input type="email" id="epost" name="epost" tabindex ="3" required><br>
-
+        <br>
         <label for="telefon">Telefon:</label>
         <input type="tel" id="telefon" name="telefon" tabindex ="4"><br>
-
+        <br>
         <label for="adresse">Adresse:</label>
         <textarea id="adresse" name="adresse" placeholder="Adresse" tabindex ="5"></textarea><br>
-
+        <br>            
         <label for="fodselsdato">Fødselsdato:</label>
         <input type="date" id="fodselsdato" name="fodselsdato" tabindex ="6"><br>
-
+        <br>
         <label for="passord">Passord:</label>
         <input type="password" id="passord" name="passord" tabindex ="7" required><br>
-
+        <br>
         <button type="submit" tabindex ="8">Registrer</button>
     </form>
     <p>Har du allerede en konto? <br>
     <br>
     <a href="login.php">Logg inn her</a></p>
     <p><a href="index.php">Tilbake til forsiden</a></p>
+    <br>
+    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
 </body>
 </html>

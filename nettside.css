@@ -2,6 +2,7 @@ body {
     text-align: center; /*Sentrerer all tekst i body*/
     font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
     font-weight: bold; /*Gjør all tekst i body fet*/
+    flex: content;  
 }
 
 button {
