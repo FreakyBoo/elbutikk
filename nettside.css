@@ -1,0 +1,34 @@
+body {
+    text-align: center; /*Sentrerer all tekst i body*/
+    font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
+    font-weight: bold; /*Gjør all tekst i body fet*/
+}
+
+button {
+    padding: 10px 20px; /*Legger til padding for å gjøre knappen større*/
+    font-size: 16px; /*Endrer skriftstørrelsen på knappene*/
+    background-color: #303131; 
+    color: #ffffff;
+    border: none; /*Fjerner standard kantlinje*/
+    border-radius: 5px; /*Legger til avrundede hjørner*/
+    cursor: pointer; /*Endrer musepekern til finger*/
+    font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
+    font-weight: bold; /*Gjør all tekst i body fet*/
+}
+button:hover {
+    background-color: #717575; /*Endrer bakgrunnsfarge når musen er over knappen*/
+}
+
+a{
+    color: #111111; /*Endrer fargen på lenker*/
+    text-decoration: none; /*Fjerner understrek på lenker*/
+    font-weight: bold; /*Gjør all tekst i body fet*/
+    font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
+    font-size: 20px; /*Endrer skriftstørrelsen på lenker*/ 
+}
+a:hover {
+    color: #efe6e6; /*Endrer fargen på lenker når musen er over dem*/
+    background-color: rgb(6, 6, 6); /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
+    border-radius: 5px; /*Legger til avrundede hjørner på lenker når musen er over dem*/
+    padding: 2px; /*Legger til padding på lenker når musen er over dem*/
+}

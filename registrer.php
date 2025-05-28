@@ -41,32 +41,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Registrer deg - El butikk</title>
-    <link rel="stylesheet" href="elbutikk.css">
+    <link rel="stylesheet" href="nettside.css">
 </head>
 <body>
     <h1>Registrer deg</h1>
     <form method="post">
         <label for="fornavn">Fornavn:</label>
-        <input type="text" id="fornavn" name="fornavn" required><br>
+        <input type="text" id="fornavn" name="fornavn" tabindex ="1" required><br>
 
         <label for="etternavn">Etternavn:</label>
-        <input type="text" id="etternavn" name="etternavn" required><br>
+        <input type="text" id="etternavn" name="etternavn" tabindex ="2" required><br>
 
         <label for="epost">E-post:</label>
-        <input type="email" id="epost" name="epost" required><br>
+        <input type="email" id="epost" name="epost" tabindex ="3" required><br>
 
         <label for="telefon">Telefon:</label>
-        <input type="tel" id="telefon" name="telefon"><br>
+        <input type="tel" id="telefon" name="telefon" tabindex ="4"><br>
 
         <label for="adresse">Adresse:</label>
-        <textarea id="adresse" name="adresse" placeholder="Adresse"></textarea><br>
+        <textarea id="adresse" name="adresse" placeholder="Adresse" tabindex ="5"></textarea><br>
 
         <label for="fodselsdato">Fødselsdato:</label>
-        <input type="date" id="fodselsdato" name="fodselsdato"><br>
+        <input type="date" id="fodselsdato" name="fodselsdato" tabindex ="6"><br>
 
         <label for="passord">Passord:</label>
-        <input type="password" id="passord" name="passord" required><br>
+        <input type="password" id="passord" name="passord" tabindex ="7" required><br>
 
-        <button type="submit">Registrer</button>
+        <button type="submit" tabindex ="8">Registrer</button>
     </form>
-    <p>Har du allerede en konto? <a href="login.php">Logg inn her</a></p>
+    <p>Har du allerede en konto? <br>
+    <br>
+    <a href="login.php">Logg inn her</a></p>
+    <p><a href="index.php">Tilbake til forsiden</a></p>
+</body>
+</html>
