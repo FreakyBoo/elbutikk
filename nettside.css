@@ -2,14 +2,14 @@ body {
     text-align: center; /*Sentrerer all tekst i body*/
     font-family: Arial, Helvetica, sans-serif; /*Endrer font til Arial, Helvetica eller sans-serif*/
     font-weight: bold; /*Gjør all tekst i body fet*/
-    flex: content;  
+    flex: content; /*Sentrerer innholdet i body*/
 }
 
 button {
     padding: 10px 20px; /*Legger til padding for å gjøre knappen større*/
     font-size: 16px; /*Endrer skriftstørrelsen på knappene*/
     background-color: #303131; 
-    color: #ffffff;
+    color: #ffffff; /*Endrer fargen på teksten i knappene*/
     border: none; /*Fjerner standard kantlinje*/
     border-radius: 5px; /*Legger til avrundede hjørner*/
     cursor: pointer; /*Endrer musepekern til finger*/
@@ -28,8 +28,26 @@ a{
     font-size: 20px; /*Endrer skriftstørrelsen på lenker*/ 
 }
 a:hover {
-    color: #efe6e6; /*Endrer fargen på lenker når musen er over dem*/
+    color: #fcfcfc; /*Endrer fargen på lenker når musen er over dem*/
     background-color: rgb(6, 6, 6); /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
     border-radius: 5px; /*Legger til avrundede hjørner på lenker når musen er over dem*/
     padding: 2px; /*Legger til padding på lenker når musen er over dem*/
+}
+
+.velkommen, a {
+    color: #f4f4f4; /*Endrer fargen på lenker*/
+    background-color: black; /*Endrer bakgrunnsfarge på lenker*/
+    border-radius: 5px; /*Legger til avrundede hjørner på lenker*/
+    padding: 5px;  /*Legger til padding på lenker*/
+}
+
+.velkommen, a:hover {
+    color: #f4f4f4; /*Endrer fargen på lenker når musen er over dem*/
+    background-color: black; /*Endrer bakgrunnsfarge på lenker når musen er over dem*/
+    padding: 7px;
+}
+
+.velkommen, img {
+    width: 400px; /*Setter bredden på bildet til 100px*/
+    height: 400px; /*Setter høyden på bildet til 100px*/
 }

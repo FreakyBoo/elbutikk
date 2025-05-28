@@ -21,4 +21,17 @@ $kunde_id = $_SESSION['kunde_id'];
     <meta charset="UTF-8">
     <title>Velkommen <?php echo "$fornavn"?> til EL butikk</title>
     <link rel="stylesheet" href="nettside.css">
-</head> 
+</head>
+<body>
+    <h1>Velkommen <?php echo "$fornavn"?>, til EL butikken</h1>
+    <p>Vennligst velg et alternativ for å komme i gang</p>
+
+    <div>
+        <a href="login.php"tabindex ="1">Bestill produkter</a></p> 
+        <br>
+    <p><a href="index.php" tabindex ="2">Logg ut</a></p>
+    </div>
+    <br>
+    <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
+</body>
+</html>
