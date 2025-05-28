@@ -2,11 +2,11 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>El butikk - Hjem</title>
+    <title>EL butikk - Hjem</title>
     <link rel="stylesheet" href="elbutikk.css">
 </head>
 <body>
-    <h1>Velkommen til El butikken</h1>
+    <h1>Velkommen til EL butikken</h1>
     <p>Vennligst velg et alternativ for å komme i gang</p>
 
     <div>

@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Logg inn - El butikk</title>
+    <title>Logg inn - EL butikk</title>
     <link rel="stylesheet" href="nettside.css">
 </head>
 <body>
