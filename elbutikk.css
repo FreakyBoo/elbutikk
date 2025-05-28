@@ -1,6 +1,7 @@
 body {
     text-align: center; /*Sentrerer all tekst i body*/
     font-family: Arial, sans-serif;
+    font-weight: bold; /*Gjør all tekst i body fet*/
     background-image: url('https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg');
     background-repeat: no-repeat; /*Forhindrer gjentakelse av bakgrunnsbilde*/
     background-position-x: center; /*Sentrerer bakgrunnsbildet horisontalt*/
