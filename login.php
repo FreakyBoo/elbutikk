@@ -55,4 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
     <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
 </body>
+<footer>
+    <p>&copy; 2025 EL butikk. All rights reserved</p>
+</footer>
 </html>

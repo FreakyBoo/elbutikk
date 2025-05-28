@@ -15,4 +15,7 @@
         <a href="registrer.php"><button tabindex="2">Registrer deg</button></a>
     </div>
 </body>
+<footer>
+    <p>&copy; 2025 EL butikk. All rights reserved</p>
+</footer>
 </html>
