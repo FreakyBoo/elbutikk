@@ -27,7 +27,7 @@ $kunde_id = $_SESSION['kunde_id'];
     <p>Vennligst velg et alternativ for å komme i gang</p>
 
     <div>
-        <a href="login.php"tabindex ="1">Bestill produkter</a></p> 
+        <a href="bestill.php"tabindex ="1">Bestill produkter</a></p> 
         <br>
     <p><a href="index.php" tabindex ="2">Logg ut</a></p>
     </div>
