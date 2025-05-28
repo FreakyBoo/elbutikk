@@ -23,3 +23,8 @@ button:hover {
     padding: 12px 22px; /*Legger til padding når musen er over knappen*/
 }
 
+footer{
+    bottom: 0; /*Plasserer footer nederst på siden*/
+    position: fixed; /*Fester footeren nederst på siden*/
+    margin-left: 563px;
+}

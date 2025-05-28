@@ -53,6 +53,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
     <a href="registrer.php" tabindex = "4">Registrer deg her</a></p>
     <br>
+    <a href="index.php" tabindex = "5">Tibake til forsiden</a></p>
+    <br>
     <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
 </body>
 <footer>

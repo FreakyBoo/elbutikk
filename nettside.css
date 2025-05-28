@@ -38,4 +38,9 @@ a:hover {
     padding: 8px; /*Legger til padding på lenker når musen er over dem*/
 }
 
+footer{
+    bottom: 0; /*Plasserer footer nederst på siden*/
+    position: fixed; /*Fester footeren nederst på siden*/
+    margin-left: 563px;
+}
 
