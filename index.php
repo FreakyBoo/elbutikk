@@ -10,9 +10,9 @@
     <p>Vennligst velg et alternativ for å komme i gang</p>
 
     <div>
-        <a href="login.php"><button>Logg inn</button></a> 
-        <br>
-        <a href="registrer.php"><button>Registrer deg</button></a>
+        <a href="login.php"><button tabindex="1">Logg inn</button></a>  
+        <br>   
+        <a href="registrer.php"><button tabindex="2">Registrer deg</button></a>
     </div>
 </body>
 </html>
