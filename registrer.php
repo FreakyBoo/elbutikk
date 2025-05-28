@@ -70,8 +70,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
     <p>Har du allerede en konto? <br>
     <br>
-    <a href="login.php">Logg inn her</a></p>
-    <p><a href="index.php">Tilbake til forsiden</a></p>
+    <a href="login.php" tabindex ="9">Logg inn her</a></p>
+    <p><a href="index.php" tabindex ="10">Tilbake til forsiden</a></p>
     <br>
     <img src="https://img.freepik.com/premium-vector/el-monogram-logo-design-letter-text-name-symbol-monochrome-logotype-alphabet-character-simple-logo_955145-11458.jpg" alt="El butikk logo" width="200" height="200">
 </body>
