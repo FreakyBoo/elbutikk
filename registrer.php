@@ -28,7 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES ('$fornavn', '$etternavn', '$epost', '$telefon', '$adresse', '$fodselsdato', '$passord')";
 
         if ($conn->query($sql) === TRUE) {// Hvis registreringen er vellykket
-            echo "Registrering fullført! <a href='login.php'>Logg inn her</a>";
+            echo "Registrering fullført! <br>
+            <a href='login.php'>Logg inn her</a>";
         } else {
             echo "Feil under registrering: " . $conn->error;
         }
